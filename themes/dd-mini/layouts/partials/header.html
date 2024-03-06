@@ -1,0 +1,18 @@
+<header class="header">
+    <div class="title">
+        <div>
+            {{ if .Site.Params.avatarLink }}
+                <a href="/">
+                    <img class="avatar" alt="avatar" src="{{ .Site.Params.avatarLink | relURL }}" />
+                </a>
+            {{ end }}
+        </div>
+        <div>
+            <h1>{{ .Site.Title }}</h1>
+            <h2>{{ .Site.Params.SubTitle }}</h2>
+        </div>
+        <div>
+        </div>
+    </div>
+    <hr>
+</header>

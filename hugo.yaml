@@ -1,0 +1,8 @@
+baseURL: https://drinkdiletant.cz/
+languageCode: cs-cz
+title: Drink Diletant
+theme: dd-mini
+
+params:
+  subTitle: Rád piju dobré pití
+  avatarLink: /images/avatar.jpg
