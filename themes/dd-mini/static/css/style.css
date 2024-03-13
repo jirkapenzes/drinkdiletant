@@ -325,7 +325,7 @@ html[theme='dark-mode'] {
   
   /* index post list */
   #list-page {
-    max-width: 580px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 24px;
   }
@@ -337,7 +337,7 @@ html[theme='dark-mode'] {
   #list-page .title {
     display: inline-block;
     color: #404040;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 400;
     margin: 0;
     width: 80%;
