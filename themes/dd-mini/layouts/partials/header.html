@@ -8,10 +8,14 @@
             {{ end }}
         </div>
         <div>
-            <h1>{{ .Site.Title }}</h1>
+            
+            <h1><a href="/">{{ .Site.Title }}</a></h1>
             <h2>{{ .Site.Params.SubTitle }}</h2>
         </div>
         <div>
+            <a href="/posts">
+                {{ partial "svgs/menu.svg" }}
+            </a>
         </div>
     </div>
     <hr>

@@ -12,11 +12,11 @@ html[theme='dark-mode'] {
   
   a {
     text-decoration: none;
-    color: #5badf0;
+    color: #FA6619;
   }
   
   a:hover {
-    color: #0366d6;
+    color: #D74D00;
   }
   
   /* markdown content styles */
@@ -150,7 +150,7 @@ html[theme='dark-mode'] {
     border-radius: 3px;
   }
   nav.navigation a:hover {
-    color: #0366d6;
+    color: #D74D00;
   }
   
   nav.navigation a.button {
@@ -284,6 +284,14 @@ html[theme='dark-mode'] {
     text-align: center;
   }
 
+  .header a {
+    color: black;
+  }
+
+  .header a:hover {
+    color:#D74D00;
+  }
+
   .header .title {
     max-width: 680px;
     display: flex;
@@ -300,9 +308,9 @@ html[theme='dark-mode'] {
   }
   
   .header h1 {
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0px;
-    font-size: 24px;
+    font-size: 26px;
     color: #404040;
     margin-bottom: 0;
     margin-top: 0;
@@ -331,7 +339,7 @@ html[theme='dark-mode'] {
   }
   
   #list-page .item {
-    margin: 12px 0;
+    margin: 20px 0 20px;
   }
   
   #list-page .title {
@@ -349,13 +357,12 @@ html[theme='dark-mode'] {
   }
   
   #list-page .title a:hover {
-    color: #0366d6;
+    color: #D74D00;
   }
   
   #list-page .date {
     width: 20%;
-    float: right;
-    text-align: right;
+    text-align: left;
     position: relative;
     top: 1px;
     color: #bbb;
@@ -444,7 +451,7 @@ html[theme='dark-mode'] {
     margin-right: 3px;
   }
   #single .tags a:hover {
-    color: #0366d6;
+    color: #D74D00;
   }
   
   
@@ -482,7 +489,7 @@ html[theme='dark-mode'] {
     color:#404040;
   }
   #archive .group .value .title a:hover {
-    color: #0366d6;
+    color: #D74D00;
   }
   #archive .group .value .tags {
     display: inline;
@@ -496,7 +503,7 @@ html[theme='dark-mode'] {
     margin-right: 3px;
   }
   #archive .group .value .tags a:hover {
-    color: #0366d6;
+    color: #D74D00;
   }
   
   /* taxonomy */
@@ -528,8 +535,8 @@ html[theme='dark-mode'] {
     font-size: 14px;
     margin-right: 3px;
   }
-  #tags .tag a:hover {
-    color: #0366d6;
+  #tags .tag a:D74D00 {
+    color: #D74D00;
   }
   
   /* section page */
