@@ -3,7 +3,7 @@
 {{ range $key, $val := .Site.Social }}
     <a class="symbol" href="{{ $val }}" rel="me" target="_blank">
         {{ $svg :=  print "svgs/" $key ".svg" }}
-        {{ partial $svg (dict "fill" "#bbbbbb" "width" 28 "height" 28 ) }}
+        {{ partial $svg (dict "fill" "#bbbbbb" "width" 36 "height" 36 ) }}
     </a>
 {{ end }}
 

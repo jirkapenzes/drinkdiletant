@@ -1,0 +1,40 @@
+home:
+  other: Home
+
+archive:
+  other: Archive
+
+tags:
+  other: Tags
+
+about:
+  other: About
+
+subscribe:
+  other: Subscribe
+
+404title:
+  other: 404 - Stránka nenalezena
+
+404subtitle:
+  other: Omlouvám se, ale zdá se, že jste se dostali na stránku, která neexistuje. 
+
+readMore:
+  other: Poslední příspěvky
+
+minuteRead:
+  one: '{{ . }} minuta čtení'
+  other: '{{ . }} minut čtení'
+
+wordCount:
+  one: "{{ . }} slovo"
+  other: "{{ . }} slov"
+
+postsNewer:
+  other: Novější příspěvky
+
+postsOlder:
+  other: Starší příspěvky
+
+copyright:
+  other: '© Nejsem z oboru, jsem nadšenec ♥'

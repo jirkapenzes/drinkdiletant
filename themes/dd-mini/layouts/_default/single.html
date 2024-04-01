@@ -4,26 +4,20 @@
     <h1 class="title">{{ .Title }}</h1>
 
     <div class="tip">
-        <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time>
+        <time datetime="{{ .PublishDate }}">{{ .PublishDate | time.Format ":date_long" }}</time>
         <span class="split">
           ·
         </span>
         <span>
-          {{ i18n "wordCount" . }}
+          {{ i18n "wordCount" .WordCount }}
         </span>
         <span class="split">
           ·
         </span>
         <span>
-          {{ i18n "minuteRead" . }}
+          {{ i18n "minuteRead" .ReadingTime }}
         </span>
     </div>
-
-    
-    {{ if or .Site.Params.showToc .Params.showToc }}
-        {{ partial "toc.html" . }}
-    {{ end }}
-
 
     <div class="content">
       {{ .Content }}
@@ -32,7 +26,9 @@
     {{ with .Params.tags }}
         <div class="tags">
             {{ range . }}
-                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+               <a href="{{ "tags/" | absURL }}{{ . | urlize }}">
+                  {{ . }}
+                </a>
             {{ end }}
         </div>
     {{ end}}
