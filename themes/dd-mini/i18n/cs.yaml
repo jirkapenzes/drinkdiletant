@@ -19,9 +19,6 @@ subscribe:
 404subtitle:
   other: Omlouvám se, ale zdá se, že jste se dostali na stránku, která neexistuje. 
 
-readMore:
-  other: Poslední příspěvky
-
 minuteRead:
   one: '{{ . }} minuta čtení'
   other: '{{ . }} minut čtení'
@@ -30,11 +27,15 @@ wordCount:
   one: "{{ . }} slovo"
   other: "{{ . }} slov"
 
-postsNewer:
-  other: Novější příspěvky
+readMore: Poslední příspěvky
+postsNewer: Novější příspěvky
+postsOlder: Starší příspěvky
+copyright: '© Nejsem z oboru, jsem nadšenec ♥'
 
-postsOlder:
-  other: Starší příspěvky
-
-copyright:
-  other: '© Nejsem z oboru, jsem nadšenec ♥'
+tags:
+  coffee: Káva
+  spirits: Alkohol
+  coctails: Koktejl
+  beer: Pivko
+  wine: Víno
+  recepts: Recepty

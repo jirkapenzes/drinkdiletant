@@ -1,6 +1,6 @@
 +++
-title = 'Negroni Pan Drinku'
-date = 2024-03-04
+title = 'Old Fashioned'
+date = 2024-01-03
 draft = false
 tags=['káva']
 +++

@@ -3,8 +3,12 @@ languageCode: cs-cz
 title: Drink Diletant
 theme: dd-mini
 
-paginate: 8
+paginate: 5
 defaultContentLanguage: cs
+
+taxonomies:
+  tag: tags
+  categories: categories
 
 social:
   instagram: https://www.instagram.com/drink.diletant
@@ -13,4 +17,14 @@ params:
   subTitle: Rád piju dobré pití
   avatarLink: /images/avatar.jpg
 
-  
+menus:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 10
+  - name: Products
+    pageRef: /products
+    weight: 20
+  - name: Services
+    pageRef: /tags
+    weight: 30

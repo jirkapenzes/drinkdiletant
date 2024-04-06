@@ -1,3 +1,35 @@
+DD
+    {{ i18n "tags.wine" }}
+DD
+
+C
+<div>
+{{ range $.Site.Taxonomies.tags }}
+    {{ i18n .Page.Title }} {{ .Page.Permalink }}<br>
+{{ end }}
+</div>
+C
+
+AA
+{{ range (.GetTerms "tags") }}
+<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+{{ end }}
+AA
+
+<div>
+    {{- range site.Menus.main }}
+  <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">
+   1 {{ .Name }}
+  </a>
+{{- end }}
+</div>
+
+<ul>
+    {{ range .Site.Taxonomies.tags }}
+        <li><a href="{{ .Page.Permalink }}">XX{{ i18n .Page.Title .Page.Title }}XX {{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }}
+</ul>
+
 <header class="header">
     <div class="title">
         <div>

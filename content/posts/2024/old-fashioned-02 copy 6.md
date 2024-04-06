@@ -1,6 +1,6 @@
 +++
-title = 'Nejlepší koktej planety je Old Fashioned'
-date = 2024-03-20T16:03:21+01:00
+title = 'Víno a Romantika: Vůně Lásky'
+date = 2023-07-12T16:03:21+01:00
 draft = false
 tags=['koktejly', 'whiskey', 'recepty']
 +++

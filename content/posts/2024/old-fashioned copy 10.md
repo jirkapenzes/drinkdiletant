@@ -1,6 +1,6 @@
 +++
-title = 'Old Fashioned'
-date = 2024-03-04T15:43:29+01:00
+title = 'Koktejlová Dvojče: Perfektní Dvojice na Každou Příležitost'
+date = 2023-09-28T15:43:29+01:00
 draft = false
 tags=['koktejly']
 +++

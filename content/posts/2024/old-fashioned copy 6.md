@@ -1,6 +1,6 @@
 +++
-title = 'Old Fashioned'
-date = 2024-03-15T15:43:29+01:00
+title = 'Whiskey a Regionální Charakter: Cestování Sklenicí po Skotsku, Irsku a dále'
+date = 2023-11-15T15:43:29+01:00
 draft = false
 tags=['koktejly']
 +++
