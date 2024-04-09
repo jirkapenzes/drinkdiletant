@@ -1,36 +1,32 @@
 {{ define "main" }}
-XXX
 <section id="archive">
-XXX
-<h2>
-       x {{ .Title }}
+    {{ $i18nKey := (lower (print "tags." .Title)) }}
+
+    <h2>
+        {{ if i18n $i18nKey }}
+        {{ i18n $i18nKey }}
+        {{ else }}
+        {{ .Title }}
+        {{ end }}
     </h2>
-    
+
     {{ range .Data.Pages.GroupByDate "2006" }}
-        <div class="group">
-            <h3 class="key">
-                {{ .Key }}
-            </h3>
-
-            {{ range .Pages }}
-                <div class="value">
-                  <div class="date">
-                      <time datetime="{{ .PublishDate }}">{{ .PublishDate | time.Format "2. January. " }}</time>
-                  </div>
-                  <div class="title">
-                      <a href="{{ .Permalink }}">
-                          {{ .Title }}
-                      </a>
-                  </div>
-                </div>
-            {{ end }}          
+    <div class="group">
+        <h3 class="key">
+            {{ .Key }}
+        </h3>
+        
+        {{ range .Pages }}
+        <div class="value">
+            <div class="title">
+                <a href="{{ .Permalink }}">
+                    {{ .Title }}
+                </a>
+            </div>
         </div>
-
+        {{ end }}
+    </div>
     {{ end }}
-
-
-
 </section>
-
 
 {{ end }}

@@ -1,41 +1,56 @@
 {{ define "main" }}
 
 <section id="single">
-    <h1 class="title">{{ .Title }}</h1>
+  <h1 class="title">{{ .Title }}</h1>
 
-    <div class="tip">
-        <time datetime="{{ .PublishDate }}">{{ .PublishDate | time.Format ":date_long" }}</time>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          {{ i18n "wordCount" .WordCount }}
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          {{ i18n "minuteRead" .ReadingTime }}
-        </span>
-    </div>
+  <div class="tip">
+    <time datetime="{{ .PublishDate }}">{{ .PublishDate | time.Format ":date_long" }}</time>
+    <span class="split">
+      ·
+    </span>
+    <span>
+      {{ i18n "wordCount" .WordCount }}
+    </span>
+    <span class="split">
+      ·
+    </span>
+    <span>
+      {{ i18n "minuteRead" .ReadingTime }}
+    </span>
+  </div>
 
-    <div class="content">
-      {{ .Content }}
-    </div>
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+  <div class="tags">
+    {{ with .Params.categories }}
+    {{ range . }}
+    <a href="{{ "categories/" | absURL }}{{ . | urlize }}">
+      {{ if i18n (print "categories." .) . }}
+      {{ i18n (print "categories." .) .}}
+      {{ else }}
+      {{ . }}
+      {{ end }}
+    </a>
+    {{ end }}
+    {{ end}}
 
     {{ with .Params.tags }}
-        <div class="tags">
-            {{ range . }}
-               <a href="{{ "tags/" | absURL }}{{ . | urlize }}">
-                  {{ . }}
-                </a>
-            {{ end }}
-        </div>
+    {{ range . }}
+    <a href="{{ "tags/" | absURL }}{{ . | urlize }}">
+      {{ if i18n (print "tags." .) . }}
+      {{ i18n (print "tags." .) .}}
+      {{ else }}
+      {{ . }}
+      {{ end }}
+    </a>
+    {{ end }}
     {{ end}}
-    
-    {{ partial "comment.html" . }}
+  </div>
+
+  {{ partial "comment.html" . }}
 
 </section>
 
 {{ end }}
-

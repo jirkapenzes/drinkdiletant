@@ -2,8 +2,8 @@
 
 <div id="page-404">
   <div class="text">
-    <h1>{{ i18n "404title" }}</h1>
-    <div>{{ i18n "404subtitle" }}</div>
+    <h1>{{ i18n "page404.title" }}</h1>
+    <div>{{ i18n "page404.subTitle" }}</div>
   </div>
 
   <h2 class="read-more">
@@ -12,20 +12,20 @@
 
   {{ $pages := .Site.RegularPages }}
   {{ $paginator := .Paginate ($pages) }}
-  {{ range $paginator.Pages }}
-    <div class="item">
+  <section id="archive">
+    <div class="group">
+      {{ range $paginator.Pages }}
+    <div class="value">
       <div class="title">
-        <h1 class="title">
-          <a href='{{ .RelPermalink }}'>
-            {{ .Title }}
+          <a href="{{ .Permalink }}">
+              {{ .Title }}
           </a>
-        </h1>
       </div>
-      <div class="date">
-        {{ dateFormat "2. 1. 2006" .Date }}
-      </div>
-    </div>
+  </div>
   {{ end }}
+    </div>
+</section>
+
 </div>
 
 {{ end }}

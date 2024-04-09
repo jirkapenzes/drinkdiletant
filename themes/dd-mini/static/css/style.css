@@ -424,9 +424,9 @@ html[theme='dark-mode'] {
   
   
   #archive {
-    max-width: 580px;
+    max-width: 480px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 0px;
   }
   
   #archive .total {
@@ -519,29 +519,6 @@ html[theme='dark-mode'] {
     max-width: 480px;
     margin: 0 auto;
     padding: 0 24px;
-  }
-  #page-404 .item {
-    margin: 12px 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #page-404 .title {
-    color: #404040;
-    font-size: 15px;
-    font-weight: 400;
-    margin: 0;
-  }
-  
-  #page-404 .date {
-    color: #bbb;
-  }
-
-  @media (max-width: 600px) {
-    #page-404 .date {
-      display: none;
-    }
   }
 
   #page-404 .text {

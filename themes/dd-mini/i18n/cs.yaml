@@ -1,23 +1,6 @@
-home:
-  other: Home
-
-archive:
-  other: Archive
-
-tags:
-  other: Tags
-
-about:
-  other: About
-
-subscribe:
-  other: Subscribe
-
-404title:
-  other: 404 - Stránka nenalezena
-
-404subtitle:
-  other: Omlouvám se, ale zdá se, že jste se dostali na stránku, která neexistuje. 
+page404:
+  title: 404 - Stránka nenalezena
+  subTitle: Omlouvám se, ale zdá se, že jste se dostali na stránku, která neexistuje. 
 
 minuteRead:
   one: '{{ . }} minuta čtení'
@@ -39,3 +22,9 @@ tags:
   beer: Pivko
   wine: Víno
   recepts: Recepty
+
+categories:
+  coffee: Káva
+  wine: Víno
+  beer: Pivko
+  spirits: Alkohol

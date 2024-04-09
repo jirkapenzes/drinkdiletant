@@ -6,9 +6,8 @@ theme: dd-mini
 paginate: 5
 defaultContentLanguage: cs
 
-taxonomies:
-  tag: tags
-  categories: categories
+disableKinds:
+  - taxonomy
 
 social:
   instagram: https://www.instagram.com/drink.diletant
