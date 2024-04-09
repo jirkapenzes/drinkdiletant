@@ -33,7 +33,7 @@ html[theme='dark-mode'] {
     display: block;
     border: none;
     height: 2px;
-    margin: 40px auto;
+    margin: 10px auto;
     background: #eee;
   }
   
@@ -132,54 +132,21 @@ html[theme='dark-mode'] {
   /* navigation */
   
   nav.navigation {
-    padding: 20px 20px 0;
-    background: #fff;
-    background: rgba(255, 255, 255, 0.9);
-    margin: 0 auto;
-    text-align: right;
-    z-index: 100;
+    text-align: center;
   }
   
   nav.navigation a {
-    top: 8px;
-    right: 6px;
-    padding: 8px 12px;
-    color: #5badf0;
-    font-size: 13px;
-    line-height: 1.35;
-    border-radius: 3px;
+    color: #404040;
+    padding-left: 20px;
+    padding-right: 20px;
   }
+  
   nav.navigation a:hover {
     color: #D74D00;
   }
   
-  nav.navigation a.button {
-    background: #5badf0;
-    color: #fff;
-    margin-left: 12px;
-  }
   @media (max-width: 700px) {
     nav.navigation {
-      padding: 20px 10px 0 0;
-      background: #fff;
-      background: rgba(255, 255, 255, 0.9);
-      margin: 0 auto;
-      text-align: right;
-      z-index: 100;
-    }
-    nav.navigation a {
-      top: 8px;
-      right: 6px;
-      padding: 8px 8px;
-      color: #5badf0;
-      font-size: 13px;
-      line-height: 1.35;
-      border-radius: 3px;
-    }
-  }
-  
-  @media (max-width: 324px) {
-    nav.navigation a.button {
       display: none;
     }
   }
@@ -288,14 +255,6 @@ html[theme='dark-mode'] {
     font-weight: 300;
     color: #757575;
     margin: 0;
-  }
-
-  .header hr {
-      display: block;
-      border: none;
-      height: 2px;
-      margin: 0px auto;
-      background: #eee;
   }
   
   /* index post list */

@@ -21,9 +21,3 @@ menus:
   - name: Home
     pageRef: /
     weight: 10
-  - name: Products
-    pageRef: /products
-    weight: 20
-  - name: Services
-    pageRef: /tags
-    weight: 30

@@ -2,6 +2,7 @@
 title = 'Tequila Sunrise'
 date = 2023-07-02T16:03:21+01:00
 draft = false
+categories=['wine', 'coffee', 'spirits' ]
 tags=['koktejly', 'whiskey', 'recepty']
 +++
 

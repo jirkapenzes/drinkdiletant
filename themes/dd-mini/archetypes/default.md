@@ -2,7 +2,7 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 tags:
-categories: ['beer']
+categories: ['beer', 'wine']
 draft: false
 
 ---
