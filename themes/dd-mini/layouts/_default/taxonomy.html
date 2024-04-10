@@ -1,12 +1,22 @@
 {{ define "main" }}
 <section id="archive">
-    {{ $i18nKey := (lower (print "tags." .Title)) }}
+    {{ $title := .Title }}
+    {{ $i18nKey := "" }}
+
+    {{ $urlParts := split .Permalink "/" }}
+    {{ $taxonomies := $.Site.Taxonomies }}
+    {{ range $taxonomy, $terms := $taxonomies }}
+        {{ if in $urlParts $taxonomy }}
+            {{ $i18nKey = (lower (print $taxonomy "." $title)) }}
+        {{ end }}
+    {{ end }}
+
 
     <h2>
         {{ if i18n $i18nKey }}
         {{ i18n $i18nKey }}
         {{ else }}
-        {{ .Title }}
+        {{ $title }}
         {{ end }}
     </h2>
 

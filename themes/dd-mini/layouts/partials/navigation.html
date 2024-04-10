@@ -6,7 +6,15 @@
 	{{- end }}
 
 	{{ range .Site.Taxonomies.categories }}
-		<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+		{{ $i18nKey := (lower (print "categories." .Page.Title)) }}
+
+		<a href="{{ .Page.Permalink }}">
+			{{ if i18n $i18nKey }}
+			{{ i18n $i18nKey }}
+			{{ else }}
+			{{ .Page.Title }}
+			{{ end }}
+		</a>
 	{{ end }}
 </nav>
 <hr class="navigation">
