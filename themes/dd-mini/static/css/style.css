@@ -149,6 +149,9 @@ html[theme='dark-mode'] {
     nav.navigation {
       display: none;
     }
+    hr.navigation {
+      display: none;
+    }
   }
   
   /* comment */
@@ -218,7 +221,7 @@ html[theme='dark-mode'] {
     .header .title {
       text-align: center;
       flex-direction: column;
-     align-items: center;
+      align-items: center;
     }
   }
 
@@ -271,13 +274,20 @@ html[theme='dark-mode'] {
   #list-page .title {
     display: inline-block;
     color: #404040;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 48px;
     margin: 0;
     width: 80%;
   }
   
+  @media (max-width: 700px) {
+    #list-page .title{
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
   #list-page .title a {
     color: #404040;
     display: block;
@@ -337,7 +347,7 @@ html[theme='dark-mode'] {
   
   #single .title {
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 48px;
   }
