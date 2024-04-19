@@ -36,5 +36,36 @@
 
 </script>
 
+XXX
+
+
+<!--
+    You can add as many counter as you want.
+    Specify the url using the attribute: data-url="<your url here>"
+    (You can also add data-uid and data-guid attributes)
+-->
+<div class="gc-counter" data-url="http://example.com/url-with-gc"></div>
+<div class="gc-counter" data-url="http://example.com/other-url-with-gc"></div>
+
+
+<!--
+    Include this javascript code after your .gc-counters elements.
+
+  If you want to initialize counters on elements added to the DOM
+  after the page has been loaded, just call window.graphcomment_counter()
+-->
+<script type="text/javascript">
+  function __semio__onload__counter() {
+    __semio__helpers_counter('drinkdiletant')
+  }
+
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload__counter; gc.defer = true; gc.src = 'https://integration.graphcomment.com/helpers_counter.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+  
+</script>
+
   </div>
 {{ end }}
