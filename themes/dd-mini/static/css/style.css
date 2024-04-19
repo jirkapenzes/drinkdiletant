@@ -222,7 +222,7 @@ html[theme='dark-mode'] {
       text-align: center;
       flex-direction: column;
       align-items: center;
-    }
+     }
   }
 
   .header .avatar {
@@ -500,4 +500,9 @@ html[theme='dark-mode'] {
     font-size: 20px;
     margin-top: 48px;
     margin-bottom: 12px;
+  }
+
+  /* Graph comments */
+  .gc-header-left {
+    visibility: hidden;
   }
