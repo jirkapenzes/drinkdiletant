@@ -9,10 +9,6 @@ defaultContentLanguage: cs
 disableKinds:
   - taxonomy
 
-services:
-  disqus:
-    shortname: drinkdiletant
-
 social:
   instagram: https://www.instagram.com/drink.diletant
 
@@ -20,6 +16,7 @@ params:
   subTitle: Rád piju dobré pití
   avatarLink: /images/avatar.jpg
   enableComments: true
+  graphComments: drinkdiletant
 
 menus:
   main:
