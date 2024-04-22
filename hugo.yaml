@@ -3,8 +3,12 @@ languageCode: cs-cz
 title: Drink Diletant
 theme: dd-mini
 
-paginate: 5
+paginate: 15
 defaultContentLanguage: cs
+
+services:
+  googleAnalytics:
+    ID: G-03W02X2FRW
 
 disableKinds:
   - taxonomy
