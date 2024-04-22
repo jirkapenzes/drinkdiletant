@@ -7,7 +7,8 @@
             {{ .Key }}
         </h3>
         
-        {{ range .Pages }}
+        {{ $pages := where (where .Pages "Draft" false) "Type" "posts" }}
+        {{ range $pages }}    
         <div class="value">
             <div class="title">
                 <a href="{{ .Permalink }}">

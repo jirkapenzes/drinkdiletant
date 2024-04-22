@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div id="list-page">
-    {{ $pages := .Site.RegularPages }}
+    {{ $pages := where (where .Site.RegularPages "Draft" false) "Type" "posts" }}
     {{ $paginator := .Paginate ($pages) }}
     {{ range $paginator.Pages }}
 

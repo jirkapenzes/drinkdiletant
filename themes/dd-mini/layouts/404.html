@@ -10,8 +10,9 @@
     {{ i18n "readMore" }}
   </h2>
 
-  {{ $pages := .Site.RegularPages }}
-  {{ $paginator := .Paginate ($pages) }}
+  {{ $pages := where (where .Site.RegularPages "Draft" false) "Type" "posts" }}
+  {{ $paginator := .Paginate $pages 5 }}
+
   <section id="archive">
     <div class="group">
       {{ range $paginator.Pages }}

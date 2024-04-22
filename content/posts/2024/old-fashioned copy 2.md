@@ -1,7 +1,7 @@
 +++
 title = 'Víno a Gastronomie: Skvělé Párování'
 date = 2024-03-19T15:43:29+01:00
-draft = false
+draft = true
 categories=['spirits', 'coffee', 'wine', 'coctails', 'beer']
 tags=['roasters']
 +++
