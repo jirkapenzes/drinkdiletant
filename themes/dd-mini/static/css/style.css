@@ -385,7 +385,8 @@ html[theme='dark-mode'] {
     padding: 4px 7px;
     color: #757575;
     font-size: 14px;
-    margin-right: 3px;
+    margin-right: 5px;
+    margin-top: 5px;
   }
   #single .tags a:hover {
     color: #D74D00;
