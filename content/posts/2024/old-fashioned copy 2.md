@@ -1,9 +1,10 @@
 +++
 title = 'Víno a Gastronomie: Skvělé Párování'
 date = 2024-03-19T15:43:29+01:00
-draft = true
+draft = false
 categories=['spirits', 'coffee', 'wine', 'coctails', 'beer']
 tags=['roasters']
+slug = 'my-first-post2'
 +++
 
 Páteční pohoda žádá lehký svěží klasický kotejl
