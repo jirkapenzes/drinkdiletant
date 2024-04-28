@@ -1,6 +1,6 @@
 +++
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-date = '{{ time.Now.Format "2006-01-02" }}'
+title = 'Demo 4'
+date = '2024-04-27'
 draft = false
 categories=['coffee', 'wine', 'beer', 'spirits', 'coctails']
 tags=[]
@@ -33,4 +33,4 @@ Seznam s odrážkami:
 |-----------------|-----------------|
 | Obsah buňky 1   | Obsah buňky 2   |
 
-![Scenario 1: Across columns](/images/example.png)
+![Some image](/images/posts/example.png)

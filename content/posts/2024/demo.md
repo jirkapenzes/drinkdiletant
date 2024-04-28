@@ -1,7 +1,6 @@
 +++
-title = 'Drop Coffee a Kofio'
+title = 'Nový příspěvek'
 date = 2024-04-19T15:43:29+01:00
-slug = 'my-first-post'
 draft = false
 categories=['spirits', 'coffee', 'wine', 'coctails', 'beer']
 tags=['roasters']

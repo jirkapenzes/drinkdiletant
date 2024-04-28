@@ -1,6 +1,6 @@
 +++
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-date = '{{ time.Now.Format "2006-01-02" }}'
+title = 'Demo 3'
+date = '2024-04-25'
 draft = false
 categories=['coffee', 'wine', 'beer', 'spirits', 'coctails']
 tags=[]
@@ -32,5 +32,15 @@ Seznam s odrážkami:
 | Název sloupce 1 | Název sloupce 2 |
 |-----------------|-----------------|
 | Obsah buňky 1   | Obsah buňky 2   |
+| Obsah buňky 3   | Obsah buňky 4   |
 
-![Scenario 1: Across columns](/images/example.png)
+> Toto je citace.
+
+`Toto je řádkově zvýrazněný text`
+
+---
+
+- [x] Splněný úkol
+- [ ] Nesplněný úkol
+
+

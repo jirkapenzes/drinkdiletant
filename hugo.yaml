@@ -6,6 +6,9 @@ theme: dd-mini
 paginate: 15
 defaultContentLanguage: cs
 
+markup:
+  defaultMarkdownHandler: goldmark
+
 services:
   googleAnalytics:
     ID: G-03W02X2FRW

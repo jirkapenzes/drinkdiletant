@@ -128,6 +128,19 @@ html[theme='dark-mode'] {
     font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
   }
   
+ input[type="checkbox"]:checked ~ label > img {
+    transform: scale(1.6);
+    cursor: zoom-out;
+    position: relative;
+    z-index: 999;
+}
+
+ img.zoomCheck {
+    transition: transform 0.15s ease;
+    z-index: 999;
+    cursor: zoom-in;
+}
+
   
   /* navigation */
   
