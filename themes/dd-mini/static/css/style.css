@@ -4,10 +4,11 @@ html[theme='dark-mode'] {
   
   body {
     line-height: 1;
-    font: normal 15px/1.5em 'Lora', serif;
+    font: normal 'Lora', serif;
     color: #404040;
-    line-height: 1.75;
-    letter-spacing: 0.008em;
+    font-size: 20px;
+    line-height: 32px;
+    font-kerning: auto;
   }
   
   a {
@@ -80,6 +81,7 @@ html[theme='dark-mode'] {
   h2,
   h3 {
     font-weight: 400;
+    font-size: 30px;
   }
   p {
     margin-block-start: 1.5em;
@@ -92,6 +94,8 @@ html[theme='dark-mode'] {
   }
   .markdown-image img {
     max-width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
   }
   .anchor { 
     font-size: 100%; 
@@ -228,6 +232,7 @@ html[theme='dark-mode'] {
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   @media (max-width: 600px) {
@@ -275,7 +280,7 @@ html[theme='dark-mode'] {
   
   /* index post list */
   #list-page {
-    max-width: 480px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 0 24px;
   }
@@ -287,7 +292,7 @@ html[theme='dark-mode'] {
   #list-page .title {
     display: inline-block;
     color: #404040;
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 400;
     line-height: 48px;
     margin: 0;
@@ -353,14 +358,14 @@ html[theme='dark-mode'] {
   
   /* single page */
   #single {
-    max-width: 480px;
+    max-width: 650px;
     margin: 60px auto 0 auto;
     padding: 0 64px;
   }
   
   #single .title {
     text-align: center;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 400;
     line-height: 48px;
   }
@@ -493,7 +498,7 @@ html[theme='dark-mode'] {
   
   /* section page */
   #section {
-    max-width: 580px;
+    max-width: 650px;
     margin: 48px auto 0 auto;
     padding: 0 12px;
   }
